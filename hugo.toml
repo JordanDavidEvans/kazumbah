@@ -1,4 +1,9 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://kazumbah.example.com/'
+languageCode = 'en-au'
+title = 'Kazumbah Zumba with Kaz in Murwillumbah'
 theme = 'mytheme'
+
+[params]
+  owner = 'Kaz Chapman'
+  phone = '0422 233 836'
+  facebook = 'https://www.facebook.com/p/Kazumbah-Murwillumbah-Zumba-with-Kaz-100057742846960/'
