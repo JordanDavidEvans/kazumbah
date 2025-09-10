@@ -23,6 +23,7 @@
     </div>
   </header>
   <main>
+    {{ partial "hero.html" . }}
     {{ block "main" . }}{{ end }}
   </main>
   <footer>
@@ -30,5 +31,6 @@
     <iframe src="{{ .Site.Params.mapEmbed }}" width="300" height="200" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <p><a href="{{ .Site.Params.facebook }}">Facebook</a></p>
   </footer>
+  <script src="/js/main.js"></script>
 </body>
 </html>
