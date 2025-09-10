@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.site-header nav');
+  if (menuToggle && nav) {
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  }
+
   const cards = document.querySelectorAll('.happy .card');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
