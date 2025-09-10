@@ -13,13 +13,16 @@
     .cta-section a { background:#f04; color:#fff; padding:10px 20px; text-decoration:none; border-radius:4px; }
     footer { background:#333; color:#fff; text-align:center; padding:1rem; }
     footer a { color:#fff; }
+    footer iframe { max-width:100%; }
   </style>
+  {{ partial "schema.html" . }}
 </head>
 <body>
   <header>
     <nav>
       <a href="{{ "/locations/" | relURL }}">Locations</a>
       <a href="{{ "/services/" | relURL }}">Classes</a>
+      <a href="{{ "/contact/" | relURL }}">Contact</a>
       <a href="{{ "/book-a-class/" | relURL }}" class="cta">Book a Class</a>
     </nav>
   </header>
@@ -28,7 +31,8 @@
   </main>
   {{ partial "cta.html" . }}
   <footer>
-    <p>&copy; {{ now.Year }} {{ .Site.Params.owner }} | <a href="tel:{{ replace .Site.Params.phone " " "" }}">{{ .Site.Params.phone }}</a></p>
+    <p>{{ .Site.Params.business }} &bull; {{ .Site.Params.serviceAreas }} &bull; <a href="tel:{{ replace .Site.Params.phone " " "" }}">{{ .Site.Params.phone }}</a></p>
+    <iframe src="{{ .Site.Params.mapEmbed }}" width="300" height="200" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <p><a href="{{ .Site.Params.facebook }}">Facebook</a></p>
   </footer>
 </body>

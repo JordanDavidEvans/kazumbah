@@ -1,0 +1,14 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsActivityLocation",
+  "name": "{{ .Site.Params.business }}",
+  "url": "{{ .Site.BaseURL }}",
+  "telephone": "{{ .Site.Params.phoneE164 }}",
+  "areaServed": [{{ range $i, $e := .Site.Params.areas }}{{ if $i }}, {{ end }}"{{ $e }}"{{ end }}],
+  "sameAs": [
+    "{{ .Site.Params.facebook }}",
+    "https://www.zumba.com/"
+  ]
+}
+</script>
