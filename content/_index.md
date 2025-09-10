@@ -14,3 +14,6 @@ Kaz Chapman brings the party to Murwillumbah with upbeat ZUMBA fitness. ZUMBA cl
 ## Connect
 Phone: 0422 233 836  
 Facebook: https://www.facebook.com/p/Kazumbah-Murwillumbah-Zumba-with-Kaz-100057742846960/
+
+## SEO Spotlight: Zumba Fitness in Murwillumbah
+Searching for **Zumba in Murwillumbah**? Kazumbah delivers lively Latin-inspired workouts for the Northern Rivers region. From adult fitness to kids dance parties and senior-friendly sessions, Kaz Chapman helps the community stay active and connected through music and movement.

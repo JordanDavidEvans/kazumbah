@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ .Title }}</title>
   <style>
     body { margin:0; font-family: sans-serif; }
@@ -33,6 +34,12 @@
       background: rgba(255,255,255,0.6);
       z-index: -1;
       pointer-events: none;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 18px;
+        line-height: 1.6;
+      }
     }
   </style>
   {{ partial "schema.html" . }}
