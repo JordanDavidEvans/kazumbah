@@ -8,10 +8,20 @@ a { text-decoration: none; }
 .site-header .container { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; }
 .site-header nav a { margin-left: 15px; color: #333; font-weight: 600; }
 .site-header nav a.btn-cta { background: #BE2D93; color: #fff; padding: 8px 16px; border-radius: 4px; }
+.menu-toggle { display: none; background: none; border: none; font-size: 24px; cursor: pointer; }
+
+@media (max-width: 768px) {
+  .site-header .container { flex-wrap: wrap; }
+  .site-header nav { display: none; flex-direction: column; width: 100%; background: #fff; }
+  .site-header nav a { margin: 10px 0; }
+  .site-header nav.show { display: flex; }
+  .menu-toggle { display: block; }
+}
 
 /* Hero */
 .hero { position: relative; height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; overflow: hidden; }
-.hero video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(5px); z-index: -1; }
+.hero .dark-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 0; }
 .hero .overlay { position: relative; z-index: 1; }
 .hero .btn { margin-top: 20px; background: #BE2D93; color: #fff; padding: 10px 20px; border-radius: 4px; display: inline-block; }
 
